@@ -438,7 +438,7 @@ header a.icon {
 }
 
 .degreeDiv .degreeContent {
-    font-weight: 600;
+/*     font-weight: 600; */
     color: var(--text-color);
 }
 
