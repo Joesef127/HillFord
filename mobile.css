@@ -1,0 +1,526 @@
+/* general styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+/* variables */
+:root {
+    --light-bg: #fe8617;
+    --white: #ffffff;
+    --dark-bg: #0d131a;
+    --text-color: #193f5f;
+    --transition-time: 0.3s;
+}
+
+/* smaller desktop or large tablet screen */
+@media screen and (max-width: 960px) {
+    .sectionOne {
+        margin-top: 5rem;
+    }
+    
+    .sectionOneContent {
+        width: 70%;
+    }
+
+    .cardContainer {
+        padding: 0 2rem;
+    }
+
+    .cardContainer .card {
+        margin: 1rem 1rem;
+    }
+
+    .identity .identityDiv {
+        width: auto;
+    }
+
+    .sectionThree .darkBG {
+        padding: 4rem 4rem;
+    }
+
+    .sectionFour {
+        padding: 2rem 4rem;
+    }
+
+    .footerContent .lastFooter {
+        /* flex-direction: column; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        font-size: 0.6rem;
+        /* padding: 1rem 0; */
+    }
+
+    .lastFooter .copyrightFooter {
+        /* flex-direction: column; */
+        /* width: 100%; */
+        float: left;
+    }
+
+    .lastFooter .policyFooter {
+        /* flex-direction: column; */
+        margin: 1rem 0;
+    }
+
+    .lastFooter .policyFooter a {
+        text-align: center;
+        float: right;
+    }
+}
+
+/* Tablet screen */
+@media screen and (max-width: 780px ) {
+    .sectionOneContent {
+        width: 80%;
+    }
+    .sectionOneContent h1 {
+        font-size: 3.2rem;
+        line-height: 3.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .sectionOneContent p {
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .sectionTwo .cardContainer {
+        flex-direction: column;
+        /* width: 100%; */
+    }
+
+    .cardContainer .card {
+        /* width: 80%; */
+        padding: 2rem;
+    }
+
+    .cardTitleDiv .cardTitle {
+        font-size: 2rem;
+    }
+    
+    .card .cardContentDiv {
+        margin: 1.5rem 0 3rem 0;
+    }
+    
+    .cardContentDiv .cardContent {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    .sectionThree .darkBG {
+        flex-direction: column;
+        padding: 2rem 4rem;
+    }
+
+    .darkBG .darkBgContents {
+        width: auto;
+        text-align: center;
+    }
+
+    .darkBgContents p {
+        font-size: 1.2rem;
+    }
+
+    .identity .identityDiv {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+    }
+
+    .identityDiv .identityCard {
+        margin: 0 1rem;
+    }
+
+    .identityCard figure img {
+        width: 3.5rem;
+    }
+
+    .identityCard .identityHeading {
+        color: var(--text-color);
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
+    
+    .identityCard .identityContent {
+        font-size: 1rem;
+        line-height: 1.4rem;
+        opacity: 1;
+    }
+
+    .sectionFour {
+        flex-direction: column;
+        padding: 2rem 4rem;
+    }
+
+    .sectionFour .degreeDiv {
+        width: 100%;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+
+    .degreeDiv .degreeContent {
+        font-size: 1.2rem;
+        width: auto;
+    }
+
+    .sectionFive {
+        padding: 3rem 0;
+    }
+
+    .sectionFive .successDiv {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    .successDiv .miniSuccessDiv {
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .successDiv #secondSuccessDiv {
+        margin-top: 1rem;
+    }
+    
+    .miniSuccessDiv figure {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        /* margin: -1rem 0; */
+    }
+    
+    .miniSuccessDiv figure video {
+        margin: 2rem 3rem;
+        border-radius: 1.2rem;
+    }
+    
+    figure figcaption {
+        width: 100%;
+        background-color: var(--white);
+        padding: 1rem 0 0 0;
+        text-align: center;
+        border-radius: 1rem;
+        box-shadow: 0.5px 0.5px 5px 0.5px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        margin: -1.3rem 0;
+        transition: var(--transition-time);
+        transform: translateY(-85%);
+        /* opacity: 0; */
+    }
+    
+    figure figcaption:hover {
+        transform: translateY(0%);
+    }
+
+    figure figcaption .downArrow {
+        font-weight: 900;
+        font-size: 1.5rem;
+        /* margin-top: 5rem; */
+    }
+
+    footer {
+        border-radius: 2rem 2rem 0 0;
+        padding: 3rem 6rem 2rem 6rem;
+    }
+
+    .footerContent .firstFooter {
+        width: 100%;
+    }
+
+    footer .firstFooter h2 {
+        font-size: 2.6rem;
+        line-height: 3rem;
+    }
+
+    footer .firstFooter p {
+        font-size: 0.7rem;
+    }
+
+    footer .firstFooter a {
+        margin: 1.5rem 0 0 0;
+    }
+
+    footer .secondFooter {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        font-size: 0.6rem;
+        /* flex-direction: column; */
+    }
+
+    .secondFooter .hillfordFooter {
+        width: 40%;
+        text-align: center;
+        margin: 0 0 1rem 0;
+    }
+
+    .hillfordFooter h4 {
+        margin: 0.5rem 0;
+    }
+
+    .secondFooter .navFooterDiv {
+        text-align: center;
+    }
+
+    .footerContent .lastFooter {
+        /* flex-direction: column; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        font-size: 0.6rem;
+        /* padding: 1rem 0; */
+    }
+
+    .lastFooter .copyrightFooter {
+        /* flex-direction: column; */
+        /* width: 100%; */
+        float: left;
+    }
+
+    .lastFooter .policyFooter {
+        /* flex-direction: column; */
+        margin: 1rem 0;
+    }
+
+    .lastFooter .policyFooter a {
+        text-align: center;
+        float: right;
+    }
+}
+
+/* mobile phone screen */
+@media screen and (max-width: 420px) {
+    /* hamburger menu styling */
+    header {
+        overflow: hidden;
+        position: relative;
+    }
+
+    header nav, #signIn{
+        display: none;
+    }
+
+    header a {
+        text-decoration: none;
+        display: block;
+        width: fit-content;
+    }
+    
+    header a.icon {
+    /* background: var(--light-bg); */
+    opacity: 1;
+    color: var(--white);
+    padding: 0.4rem 0.8rem;
+    display: block;
+    border-radius: 0.5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+    
+    header a.icon:focus {
+    color: var(--light-bg);
+    }
+/* end of hamburger menu styling */
+    .sectionOne {
+        margin-top: 4rem;
+    }
+
+    .sectionOneContent {
+        width: 80%;
+    }
+
+    .sectionOneContent h1 {
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+    }
+
+    .sectionOneContent p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+    .sectionOneContent #learnNow {
+        font-size: 0.7rem;
+        font-weight: 700;
+        padding: 0.7rem 2.3rem;
+    }
+
+    .sectionTwo h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .cardContainer {
+        margin: 2.5rem 0;
+    }
+
+    .cardContainer .card {
+        padding: 1rem 1rem 2rem 1rem;
+        margin: 2rem 1.5rem;
+    }
+
+    .cardTitleDiv .cardTitle {
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
+    .cardContentDiv .cardContent {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        opacity: 80%;
+    }
+
+    .sectionThree .darkBG {
+        padding: 2rem 1rem;
+        margin: 0 0;
+    }
+
+    .darkBG figure img {
+        width: 16rem;
+    }
+
+    .darkBgContents h2 {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    .darkBgContents p {
+        font-size: 1rem;
+        
+    }
+
+    .sectionThree .identity {
+        margin-bottom: 3rem;
+    }
+
+    .identity h2 {
+        font-size: 2rem;
+    }
+
+    .identity .identityDiv {
+        flex-direction: column;
+    }
+
+    .identityDiv hr {
+        opacity: 0.2;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .identityDiv .identityCard {
+        margin: 1rem 0;
+    }
+
+    .sectionFour {
+        padding: 2rem 1rem;
+    }
+
+    .degreeDiv .degreeHeading {
+        font-size: 2rem;
+    }
+
+    .degreeDiv .degreeContent {
+        font-size: 1rem;
+    }
+
+    .sectionFive {
+        padding: 2rem 0;
+    }
+
+    .sectionFive h2 {
+        font-size: 2rem;
+    }
+
+    .sectionFive .successDiv {
+        padding: 0rem 3rem;
+    }
+    
+    .miniSuccessDiv figure {
+        width: 100%;
+    }
+
+    figure figcaption p {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+
+    footer .firstFooter h2 {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+    footer .firstFooter p {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+
+    .firstFooter a {
+        font-size: 0.6rem;
+        font-weight: 700;
+        padding: 0.7rem 2.3rem;
+    }
+
+    .secondFooter .hillfordFooter{
+        font-size: 0.6rem;
+        text-align: start;
+    }
+
+    .secondFooter .navFooterDiv {
+        /* flex-direction: column; */
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.6rem;
+        width: 100%;
+    }
+
+    .navFooterDiv .navFooter {
+        margin: 0 0.25rem;
+    }
+
+    .footerContent .lastFooter {
+        /* flex-direction: column; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        font-size: 0.6rem;
+        /* padding: 1rem 0; */
+    }
+
+    .lastFooter .copyrightFooter {
+        flex-direction: column;
+        /* width: 100%; */
+        float: left;
+    }
+
+    .lastFooter .policyFooter {
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+
+    .lastFooter .policyFooter a {
+        text-align: center;
+        float: right;
+    }
+}
